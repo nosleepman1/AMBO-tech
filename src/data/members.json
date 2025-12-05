@@ -1,0 +1,53 @@
+[
+    {
+        "name" : "El H Boubacar MBAYE",
+        "stack" : "Developpeur FullStack",
+        "image" : "/public/bouba.jpg",
+        "role" : "CEO & Co-Founder",
+        "reseaux" : [
+            {
+                "url" : "https://www.github.com/Bouba-sn"
+            },
+            {
+                "url" : "https://www.linkedin.com/in/el-hadji-boubacar-mbaye-612002336?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+            },
+            {
+                "url" : "https://www.instagram.com/bouba_talibe_cheikh?igsh=MTVncDZxZmp2dXZ2cA%3D%3D&utm_source=qr"
+            }
+        ]
+    },
+    {
+        "name" : "Abdallah DIOUF",
+        "stack" : "Developpeur FullStack",
+        "image" : "/public/diouf.jpg",
+        "role" : "CEO & Co-Founder",
+        "reseaux" : [
+            {
+                "url" : "https://www.github.com/nosleepman1"
+            },
+            {
+                "url" : "https://www.linkedin.com/in/abdallah-diouf-b7a530368?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+            },
+            {
+                "url" : "https://www.instagram.com/informagicien_?igsh=MTh6Z2dvb2dlZWJpZg%3D%3D&utm_source=qr"
+            }
+        ]
+    },
+    {
+        "name" : "Mohamed Dieye TINE",
+        "stack" : "Developpeur FullStack",
+        "image" : "/public/diouf.jpg",
+        "role" : "CEO & Co-Founder",
+        "reseaux" : [
+            {
+                "url" : "https://www.github.com/mohamedtine1975-droid"
+            },
+            {
+                "url" : "https://www.linkedin.com/in/abdallah-diouf-b7a530368?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+            },
+            {
+                "url" : "https://www.instagram.com/ur_mohameddd?igsh=MXZpNmZ1c3c2Z2FvdA%3D%3D&utm_source=qr"
+            }
+        ]
+    }
+]
