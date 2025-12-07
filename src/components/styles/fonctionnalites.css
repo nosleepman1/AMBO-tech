@@ -1,0 +1,32 @@
+
+:root{
+    --nav-height: 72px;
+    /* Palette */
+    --bg: #106EBE;
+    --mint: #0FFCBE;
+    --white: #0FFCBE;
+    --nav-white:#0FFCBE;
+    --text: #0FFCBE;
+    --muted:#0FFCBE;
+    --color-mint: #0FFCBE;
+  
+    /* Sizes */
+    --container: 1100px;
+    --radius: 12px;
+  
+    /* Transitions */
+    --fast: 160ms;
+    --med: 320ms;
+    --ease: cubic-bezier(.2,.9,.3,1);
+  }
+
+
+
+
+/* Cards / features */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin-top:18px}
+.card{background:rgba(255,255,255,0.04);padding:18px;border-radius:12px;backdrop-filter: blur(4px);transition:transform var(--med) var(--ease), box-shadow var(--med) var(--ease)}
+.card:hover{transform:translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.25)}
+.card__icon{font-size:28px}
+.card__title{margin:8px 0 6px;font-weight:700}
+.card__text{color: #0FFCBE;}

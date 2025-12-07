@@ -16,7 +16,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            // Détecter le scroll pour changer l'apparence de la navbar
+            
             setScrolled(window.scrollY > 50);
 
             // Détecter la section active

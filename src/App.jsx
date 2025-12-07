@@ -5,6 +5,7 @@ import Hero from './components/hero.jsx';
 import Moha from './components/moha.jsx';
 import Footer from './components/footer.jsx';
 import Contact from './components/contact.jsx';
+import Fonctionnalites from './components/fonctionnalites'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     <> 
         <Navbar/>
         <Hero />
+        <Fonctionnalites/>
         <Moha />
         <Contact/>
         <Footer />
