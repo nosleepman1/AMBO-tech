@@ -6,6 +6,7 @@ import Moha from './components/moha.jsx';
 import Footer from './components/footer.jsx';
 import Contact from './components/contact.jsx';
 import Fonctionnalites from './components/fonctionnalites'
+import Solutions from './components/solutions'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Navbar/>
         <Hero />
         <Fonctionnalites/>
+        <Solutions />
         <Moha />
         <Contact/>
         <Footer />

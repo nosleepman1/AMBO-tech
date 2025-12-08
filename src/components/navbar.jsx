@@ -62,7 +62,7 @@ const Navbar = () => {
                     className="navbar-logo"
                     onClick={(e) => handleLinkClick(e, '#hero')}
                 >
-                    <Rocket className="navbar-logo-icon" />
+                    <img src="" alt="" />
                     <span className="navbar-logo-text">AMBO TECH</span>
                 </a>
 

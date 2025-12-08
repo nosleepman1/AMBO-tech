@@ -1,0 +1,10 @@
+/* solutions grid */
+#solutions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#solutions h1{
+    font-size: 3.75rem;
+}

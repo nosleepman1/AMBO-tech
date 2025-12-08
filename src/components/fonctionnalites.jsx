@@ -4,11 +4,19 @@ import F5 from '../assets/F5.webp'
 import F7 from '../assets/F7.png'
 
 const Fonctionnalites = () => {
+
+    const cardElements [
+        {
+            "image" :"image",
+        }
+    ]
+
     return (
         <div >
             <section className="section section--features" id="fonctionnalites">
-                <div className="container" id="">
-                    <h1 className="section__title">Fonctionnalités</h1>
+                <div className="container" id="fonctionnalite">
+
+                    <h1 className="section__title" >Fonctionnalités</h1>
                     <p className="section__subtitle"><center>Des solutions simples, créatives et scalables pour des produits numériques qui fonctionnent.</center></p>
 
                     <div className="cards">
