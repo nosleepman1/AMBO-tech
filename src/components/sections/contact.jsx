@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/contact.css';
-
+import {FaMailBulk} from 'react-icons/fa'
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -60,7 +60,7 @@ const Contact = () => {
                     <div className="contact-details">
                         <div className="contact-item reveal">
                             <div className="contact-item-icon">
-                                <i className="fa-solid fa-envelope" aria-hidden="true"></i>
+                                {FaMailBulk}
                             </div>
                             <div className="contact-item-content">
                                 <span className="contact-item-label">Email</span>
