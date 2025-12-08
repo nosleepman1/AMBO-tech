@@ -1,4 +1,4 @@
-import './styles/solutions.css'
+import '../styles/solutions.css'
 
 const Solutions = () => {
 

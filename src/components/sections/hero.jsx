@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import './styles/hero.css';
-import HeroImage from '../assets/Hero.webp';
+import '../styles/hero.css';
+import HeroImage from '../../assets/Hero.webp';
 
 const Hero = () => {
     const words = useMemo(() => ['BIENVENUE', 'WELCOME', 'مرحبا بكم'], []);

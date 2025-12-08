@@ -1,5 +1,5 @@
-import '../App.css'
-import Devs from '../data/members.json'
+import '../../App.css'
+import Devs from '../../data/members.json'
 import {FaGithub, FaInstagram, FaLinkedin} from 'react-icons/fa'
 import { useEffect } from 'react'
 

@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
 import Navbar from "./components/navbar.jsx";
-import Hero from './components/hero.jsx';
-import Moha from './components/moha.jsx';
+import Hero from './components/sections/hero.jsx';
+import Moha from './components/sections/moha.jsx';
 import Footer from './components/footer.jsx';
-import Contact from './components/contact.jsx';
-import Fonctionnalites from './components/fonctionnalites'
-import Solutions from './components/solutions'
+import Contact from './components/sections/contact.jsx';
+import Fonctionnalites from './components/sections/fonctionnalites.jsx'
+import Solutions from './components/sections/solutions.jsx'
 
 function App() {
 
