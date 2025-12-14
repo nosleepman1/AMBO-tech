@@ -55,13 +55,11 @@ const Hero = () => {
                     <div className="hero-left">
                         {/* Brand + Typing Animation */}
                         <div className="hero-brand-section">
-                            <h1 className="hero-brand">
-                                <span className="brand-text">AMBO TECH</span>
-                                <span className="typing-wrapper">
-                                    <span className="typing-text">{currentText || 'BIENVENUE'}</span>
-                                    <span className="cursor"></span>
-                                </span>
-                            </h1>
+                            <h1 className="section-title text-[#0FFCBE]">AMBO TECH</h1>
+                            <div className="section-subtitle typing-wrapper" aria-hidden="false">
+                                <span className="typing-text">{currentText || 'BIENVENUE'}</span>
+                                <span className="cursor"></span>
+                            </div>
                         </div>
 
                         {/* Description */}

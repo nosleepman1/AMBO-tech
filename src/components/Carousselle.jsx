@@ -1,4 +1,5 @@
 import React from 'react';
+import { Sparkles } from 'lucide-react';
 
 const TechCarousel = () => {
   const technologies = [
@@ -38,31 +39,31 @@ const TechCarousel = () => {
   const duplicatedTechs = [...technologies, ...technologies];
 
   return (
-    <div className="w-screen  py-20 overflow-hidden">
-      <div className="mx-auto px-4 mb-12 flex justify-center">
+    <div className="w-screen py-16 md:py-20 overflow-hidden">
+      <div className="mx-auto px-4  mb-12 md:mb-16 flex justify-center">
         <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#0FFCBE] mb-4">
-            Notre Stack Technologique
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0FFCBE] mb-3">
+            Stack Technique
           </h2>
-          <p className="text-xl text-[#0FFCBE]">
-            Les technologies avec lesquelles nous creons vos solutions
+          <p className="text-sm sm:text-base md:text-lg text-gray-400 ">
+            Les technologies avec lesquelles nous créons vos solutions
           </p>
         </div>
       </div>
       <br/>
 
       {/* Carousel Container */}
-      <div className="relative">
-        {/* Gradient Overlays */}
-        <div className="absolute left-0 top-0 bottom-0 w-5 bg-linear-to-r from-white to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-5 bg-linear-to-l from-gray-50 to-transparent z-10" />
+      <div className="relative group">
+        {/* Gradient Overlays - Same color as borders */}
+        <div className="absolute left-0 top-0 bottom-0 w-8 md:w-5 bg-linear-to-r from-[#0FFCBE]/12 via-[#0FFCBE]/8 to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-8 md:w-5 bg-linear-to-l from-[#0FFCBE]/12 via-[#0FFCBE]/8 to-transparent z-10" />
 
         {/* Carousel animé */}
-        <div className="flex gap-8 animate-scroll">
+        <div className="flex gap-6 sm:gap-8 md:gap-10 animate-scroll">
           {duplicatedTechs.map((tech, index) => (
             <div
               key={`${tech.name}-${index}`}
-              className="group shrink-0 w-32 h-32 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col items-center justify-center gap-3 border border-[#0FFCBE] hover:border-gray-200 hover:scale-110 cursor-pointer"
+              className="tech-card group shrink-0 w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-lg sm:rounded-xl md:rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center gap-2 md:gap-3 border border-[#0FFCBE] hover:border-[#0FFCBE]/80 hover:scale-105 md:hover:scale-110 cursor-pointer"
               style={{
                 animation: 'float 3s ease-in-out infinite',
                 animationDelay: `${index * 1}s`
@@ -70,35 +71,35 @@ const TechCarousel = () => {
             >
               <div className="relative">
                 <div 
-                  className="absolute inset-0 blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-300 rounded-full"
+                  className="absolute inset-0 blur-lg opacity-0 group-hover:opacity-25 transition-opacity duration-300 rounded-full"
                   style={{ backgroundColor: tech.color }}
                 />
                 <img
                   src={tech.icon}
                   alt={tech.name}
-                  className="w-16 h-16 object-contain relative z-10 transition-transform duration-300 group-hover:scale-110"
+                  className="w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 object-contain relative z-10 transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
-              <span className="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors text-center px-2">
+              <span className="text-xs sm:text-xs md:text-sm font-semibold text-gray-300 group-hover:text-[#0FFCBE] transition-colors text-center px-1 md:px-2 line-clamp-2">
                 {tech.name}
               </span>
             </div>
           ))}
         </div>
       </div>
-
       <br/>
 
       {/* Deuxième rangée en sens inverse */}
-      <div className="relative mt-8">
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-linear-to-r from-gray-50 to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-linear-to-l from-white to-transparent z-10" />
+      <div className="relative mt-10 md:mt-14 group">
+        {/* Gradient Overlays - Same color as borders */}
+        <div className="absolute left-0 top-0 bottom-0 w-8 md:w-5 bg-linear-to-r from-[#0FFCBE]/12 via-[#0FFCBE]/8 to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-8 md:w-5 bg-linear-to-l from-[#0FFCBE]/12 via-[#0FFCBE]/8 to-transparent z-10" />
 
-        <div className="flex gap-8 animate-scroll-reverse">
+        <div className="flex gap-6 sm:gap-8 md:gap-10 animate-scroll-reverse">
           {duplicatedTechs.reverse().map((tech, index) => (
             <div
               key={`reverse-${tech.name}-${index}`}
-              className="group shrink-0 w-32 h-32 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col items-center justify-center gap-3 border border-[#0FFCBE] hover:border-gray-200 hover:scale-110 cursor-pointer"
+              className="tech-card group shrink-0 w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-lg sm:rounded-xl md:rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center gap-2 md:gap-3 border border-[#0FFCBE] hover:border-[#0FFCBE]/80 hover:scale-105 md:hover:scale-110 cursor-pointer"
               style={{
                 animation: 'float 3s ease-in-out infinite',
                 animationDelay: `${index * 0.1}s`
@@ -106,16 +107,16 @@ const TechCarousel = () => {
             >
               <div className="relative">
                 <div 
-                  className="absolute inset-0 blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-300 rounded-full"
+                  className="absolute inset-0 blur-lg opacity-0 group-hover:opacity-25 transition-opacity duration-300 rounded-full"
                   style={{ backgroundColor: tech.color }}
                 />
                 <img
                   src={tech.icon}
                   alt={tech.name}
-                  className="w-16 h-16 object-contain relative z-10 transition-transform duration-300 group-hover:scale-110"
+                  className="w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 object-contain relative z-10 transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
-              <span className="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors text-center px-2">
+              <span className="text-xs sm:text-xs md:text-sm font-semibold text-gray-300 group-hover:text-[#0FFCBE] transition-colors text-center px-1 md:px-2 line-clamp-2">
                 {tech.name}
               </span>
             </div>
@@ -123,7 +124,7 @@ const TechCarousel = () => {
         </div>
       </div>
 
-     
+
 
       <style>{`
         @keyframes scroll {
@@ -149,23 +150,52 @@ const TechCarousel = () => {
             transform: translateY(0px);
           }
           50% {
-            transform: translateY(-10px);
+            transform: translateY(-8px);
           }
         }
 
         .animate-scroll {
-          animation: scroll 40s linear infinite;
+          animation: scroll 50s linear infinite;
           width: fit-content;
         }
 
         .animate-scroll-reverse {
-          animation: scroll-reverse 40s linear infinite;
+          animation: scroll-reverse 50s linear infinite;
           width: fit-content;
         }
 
         .animate-scroll:hover,
         .animate-scroll-reverse:hover {
           animation-play-state: paused;
+        }
+
+        .tech-card {
+          position: relative;
+          overflow: hidden;
+        }
+
+        .tech-card::before {
+          content: '';
+          position: absolute;
+          top: -2px;
+          left: 0;
+          right: 0;
+          height: 1px;
+          background: linear-gradient(to right, transparent, #0FFCBE, transparent);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+
+        .tech-card:hover::before {
+          opacity: 1;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+          .animate-scroll,
+          .animate-scroll-reverse {
+            animation-duration: 55s;
+          }
         }
       `}</style>
     </div>

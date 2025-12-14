@@ -112,8 +112,8 @@ const SolutionsSection = () => {
             <Sparkles className="solutions-badge-icon" />
             <span>Nos Réalisations</span>
           </div>
-          <h2 className="solutions-title">Solutions Innovantes</h2>
-          <p className="solutions-subtitle">
+          <h2 className="section-title text-[#0FFCBE]">Nos Solutions</h2>
+          <p className="section-subtitle">
             Découvrez nos projets web et mobile qui transforment les idées en expériences digitales exceptionnelles
           </p>
         </div>
