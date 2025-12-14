@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import '../styles/hero.css';
 import HeroImage from '../../assets/Hero.webp';
+import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
     const words = useMemo(() => ['BIENVENUE', 'WELCOME', 'مرحبا بكم'], []);
@@ -25,16 +26,16 @@ const Hero = () => {
                 // Écriture
                 if (currentText.length < currentWord.length) {
                     setCurrentText(currentWord.substring(0, currentText.length + 1));
-                    setTypingSpeed(150);
+                    setTypingSpeed(120);
                 } else {
                     // Pause avant de supprimer
-                    setTimeout(() => setIsDeleting(true), 2000);
+                    setTimeout(() => setIsDeleting(true), 3000);
                 }
             } else {
                 // Suppression
                 if (currentText.length > 0) {
                     setCurrentText(currentWord.substring(0, currentText.length - 1));
-                    setTypingSpeed(100);
+                    setTypingSpeed(80);
                 } else {
                     setIsDeleting(false);
                     setCurrentWordIndex((prev) => (prev + 1) % words.length);
@@ -48,20 +49,54 @@ const Hero = () => {
 
     return (
         <section className="hero text-reveal" id="hero">
-            <div className="hero__content container">
-                <div className="hero__left">
-                    <h1 className="hero__title">
-                        <span className="hero__main">AMBO TECH <span className="hero__typed js-typed typewriter">{currentText || 'BIENVENUE'}<span className="cursor">|</span></span></span>
-                    </h1>
-                    <p className="hero__lead"></p>
-                    <div className="hero__ctas">
-                        <a className="btn btn--primary" href="#services">Découvrir nos services</a>
-                        <a className="btn btn--ghost" href="#team">En savoir plus</a>
+            <div className="hero-container">
+                <div className="hero-content">
+                    {/* Left Section */}
+                    <div className="hero-left">
+                        {/* Brand + Typing Animation */}
+                        <div className="hero-brand-section">
+                            <h1 className="hero-brand">
+                                <span className="brand-text">AMBO TECH</span>
+                                <span className="typing-wrapper">
+                                    <span className="typing-text">{currentText || 'BIENVENUE'}</span>
+                                    <span className="cursor"></span>
+                                </span>
+                            </h1>
+                        </div>
+
+                        {/* Description */}
+                        <p className="hero-description">
+                            Solutions digitales innovantes, créatives et performantes pour transformer vos idées en produits exceptionnels.
+                        </p>
+
+                        {/* CTA Buttons */}
+                        <div className="hero-ctas">
+                            <a className="hero-btn hero-btn--primary" href="#solutions">
+                                <span>Découvrir nos solutions</span>
+                                <ArrowRight className="btn-icon" />
+                            </a>
+                            <a className="hero-btn hero-btn--secondary" href="#fonctionnalites">
+                                En savoir plus
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* Right Section - Image */}
+                    <div className="hero-right">
+                        <div className="hero-image-wrapper">
+                            <img src={HeroImage} alt="AMBO TECH - Solutions Digitales" className="hero-image" />
+                            <div className="hero-image-glow"></div>
+                        </div>
                     </div>
                 </div>
 
-                <div className="hero__image-wrapper">
-                    <img src={HeroImage} alt="AMBO TECH" className="hero__image" />
+                {/* Bottom decoration with typing variations */}
+                <div className="hero-footer">
+                    <div className="footer-languages">
+                        <span className="lang-badge">BIENVENUE</span>
+                        <span className="lang-badge">WELCOME</span>
+                        <span className="lang-badge">مرحبا بكم</span>
+                    </div>
                 </div>
             </div>
         </section>
