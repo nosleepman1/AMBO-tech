@@ -54,15 +54,15 @@ const TechCarousel = () => {
       {/* Carousel Container */}
       <div className="relative">
         {/* Gradient Overlays */}
-        <div className="absolute left-0 top-0 bottom-0 w-5 bg-gradient-to-r from-white to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-5 bg-gradient-to-l from-gray-50 to-transparent z-10" />
+        <div className="absolute left-0 top-0 bottom-0 w-5 bg-linear-to-r from-white to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-5 bg-linear-to-l from-gray-50 to-transparent z-10" />
 
         {/* Carousel animé */}
         <div className="flex gap-8 animate-scroll">
           {duplicatedTechs.map((tech, index) => (
             <div
               key={`${tech.name}-${index}`}
-              className="group flex-shrink-0 w-32 h-32 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col items-center justify-center gap-3 border border-[#0FFCBE] hover:border-gray-200 hover:scale-110 cursor-pointer"
+              className="group shrink-0 w-32 h-32 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col items-center justify-center gap-3 border border-[#0FFCBE] hover:border-gray-200 hover:scale-110 cursor-pointer"
               style={{
                 animation: 'float 3s ease-in-out infinite',
                 animationDelay: `${index * 1}s`
@@ -91,14 +91,14 @@ const TechCarousel = () => {
 
       {/* Deuxième rangée en sens inverse */}
       <div className="relative mt-8">
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-gray-50 to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10" />
+        <div className="absolute left-0 top-0 bottom-0 w-32 bg-linear-to-r from-gray-50 to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-32 bg-linear-to-l from-white to-transparent z-10" />
 
         <div className="flex gap-8 animate-scroll-reverse">
           {duplicatedTechs.reverse().map((tech, index) => (
             <div
               key={`reverse-${tech.name}-${index}`}
-              className="group flex-shrink-0 w-32 h-32 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col items-center justify-center gap-3 border border-[#0FFCBE] hover:border-gray-200 hover:scale-110 cursor-pointer"
+              className="group shrink-0 w-32 h-32 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col items-center justify-center gap-3 border border-[#0FFCBE] hover:border-gray-200 hover:scale-110 cursor-pointer"
               style={{
                 animation: 'float 3s ease-in-out infinite',
                 animationDelay: `${index * 0.1}s`
@@ -125,7 +125,7 @@ const TechCarousel = () => {
 
      
 
-      <style jsx>{`
+      <style>{`
         @keyframes scroll {
           0% {
             transform: translateX(0);

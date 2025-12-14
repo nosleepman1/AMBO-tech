@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Menu, X, Rocket } from 'lucide-react';
 import './styles/navbar.css';
 
@@ -7,12 +7,12 @@ const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [activeSection, setActiveSection] = useState('hero');
 
-    const navLinks = [
+    const navLinks = useMemo(() => [
         { title: 'Accueil', href: '#hero', id: 'hero' },
         { title: 'Services', href: '#services', id: 'services' },
         { title: 'Équipe', href: '#team', id: 'team' },
         { title: 'Contact', href: '#contact', id: 'contact' },
-    ];
+    ], []);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -34,7 +34,7 @@ const Navbar = () => {
 
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    }, [navLinks]);
 
     const handleLinkClick = (e, href) => {
         e.preventDefault();
@@ -62,7 +62,6 @@ const Navbar = () => {
                     className="navbar-logo"
                     onClick={(e) => handleLinkClick(e, '#hero')}
                 >
-                    <img src="" alt="" />
                     <span className="navbar-logo-text">AMBO TECH</span>
                 </a>
 

@@ -60,7 +60,7 @@ const Contact = () => {
                     <div className="contact-details">
                         <div className="contact-item reveal">
                             <div className="contact-item-icon">
-                                {FaMailBulk}
+                                <FaMailBulk />
                             </div>
                             <div className="contact-item-content">
                                 <span className="contact-item-label">Email</span>
