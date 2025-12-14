@@ -71,3 +71,126 @@
   font-size: 3.75rem;
 
 }
+
+/* ==========================================
+   SECTION FONCTIONNALITES REFACTORISÉE
+   ========================================== */
+
+.fonctionnalites-section {
+  background: linear-gradient(135deg, #106EBE 0%, #0a4a8f 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 80px 20px;
+}
+
+.fonctionnalites-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(15, 252, 190, 0.08) 0%, transparent 70%);
+  animation: fonctionnalitesPulse 15s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes fonctionnalitesPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+.container-fonctionnalites {
+  position: relative;
+  z-index: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.fonctionnalites-header {
+  text-align: center;
+  margin-bottom: 60px;
+  animation: slideDownReveal 0.8s ease-out;
+}
+
+@keyframes slideDownReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fonctionnalites-title {
+  font-size: clamp(2rem, 5vw, 3.75rem);
+  font-weight: 800;
+  color: #0FFCBE;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  text-shadow: 0 2px 10px rgba(15, 252, 190, 0.2);
+}
+
+.fonctionnalites-sub {
+  font-size: 1.125rem;
+  color: rgba(15, 252, 190, 0.8);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.fonctionnalites-body {
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .fonctionnalites-section {
+    padding: 60px 16px;
+  }
+
+  .fonctionnalites-header {
+    margin-bottom: 40px;
+  }
+
+  .fonctionnalites-title {
+    font-size: 2.25rem;
+  }
+
+  .fonctionnalites-sub {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .fonctionnalites-section {
+    padding: 40px 12px;
+  }
+
+  .fonctionnalites-title {
+    font-size: 1.75rem;
+  }
+
+  .fonctionnalites-sub {
+    font-size: 0.95rem;
+  }
+}

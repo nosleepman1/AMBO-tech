@@ -2,6 +2,7 @@ import '../../App.css'
 import Devs from '../../data/members.json'
 import {FaGithub, FaInstagram, FaLinkedin} from 'react-icons/fa'
 import { useEffect } from 'react'
+import TechCarousel from '../Carousselle'
 
 const Moha = () => {
 
@@ -66,7 +67,7 @@ const Moha = () => {
 
             {
                Devs.map((dev, index) => (
-                <div className="team-member w-full reveal" key={index} style={{transitionDelay: `${index * 0.1}s`}}>
+                <div className=" team-member w-full reveal flex flex-col justify-center items-center" key={index} style={{transitionDelay: `${index * 0.1}s`}}>
                     <div className="team-member-image">
                         {/*image du developpeur */}
                         <img 
@@ -107,6 +108,8 @@ const Moha = () => {
             }   
         </div>
     </section>
+
+    < TechCarousel />
 
     <section className="services text-reveal px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20" id="services">
         <h1 className="text-glow text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">Découvrez l'ensemble de nos Créations</h1>

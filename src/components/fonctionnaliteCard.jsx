@@ -2,29 +2,39 @@ import './styles/card.css'
 import FONCTIONNALITES from '../data/fonctionnalites.json'
 import { motion } from "framer-motion";
 
+const listVariants = {
+    hidden: {},
+    visible: {
+        transition: {
+            staggerChildren: 0.12
+        }
+    }
+}
+
+const cardVariants = {
+    hidden: { opacity: 0, y: 20, scale: 0.98 },
+    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: [0.2, 0.9, 0.3, 1] } }
+}
 
 export default function FonctionnaliteCards() {
-  
     return (
-    <div className="w-full px-4 py-10 flex flex-col md:flex-row gap-6 md:gap-4 items-center justify-center">
-        {FONCTIONNALITES.map((card, i) => (
-            <motion.div
-            key={i}
-            whileHover={{ scale: 1.03 }}
-            className="card-wrapper w-full md:w-1/3 max-w-sm"
-            >
-            <div className="card-hover-bg" />
-
-
-            <div className="card-content p-4">
-            <img src={card.image} alt={card.title} className="w-full h-44 object-cover rounded-xl mb-4" />
-            <h3 className="text-xl font-semibold mb-2 card-text">{card.title}</h3>
-            <p className="text-sm opacity-80 card-text">{card.text}</p>
-            </div>
-            </motion.div>
+        <motion.div className="fonctionnalites-grid" initial="hidden" animate="visible" variants={listVariants}>
+            {FONCTIONNALITES.map((card, i) => (
+                <motion.div key={card.id || i} className="card-wrapper" variants={cardVariants} whileHover={{ translateY: -6 }} role="article" aria-label={card.title}>
+                    <div className="card-hover-bg" />
+                    <div className="card-media">
+                        <img src={card.image} alt={card.title} className="card-image" loading="lazy" />
+                    </div>
+                    <div className="card-content">
+                        <h3 className="card-title">{card.title}</h3>
+                        <p className="card-desc">{card.text}</p>
+                        <div className="card-meta">
+                            <button className="card-cta" type="button" aria-label={`En savoir plus sur ${card.title}`}>En savoir +</button>
+                        </div>
+                    </div>
+                </motion.div>
             ))}
-            
-        </div>
-  )
+        </motion.div>
+    )
 }
 

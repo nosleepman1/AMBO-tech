@@ -2,28 +2,20 @@ import '../styles/fonctionnalites.css'
 import FonctionnaliteCards from '../fonctionnaliteCard'
 
 const Fonctionnalites = () => {
-
-    
-
     return (
-        <div >
-            <section className="section section--features" id="fonctionnalites">
-                <div className="container" id="fonctionnalite">
-
-                    <h1 className="section__title" >Fonctionnalités</h1>
-                    <p className="section__subtitle"><center>Des solutions simples, créatives et scalables pour des produits numériques qui fonctionnent.</center></p>
-
-                    <div style={{display:'flex'}} className="cards">
-                        
-                        <FonctionnaliteCards/>
-
-                    </div>
+        <section className="fonctionnalites-section text-reveal" id="fonctionnalites">
+            <div className="container-fonctionnalites">
+                <div className="fonctionnalites-header">
+                    <h2 className="fonctionnalites-title">Fonctionnalités</h2>
+                    <p className="fonctionnalites-sub">Des solutions simples, créatives et scalables pour des produits numériques qui fonctionnent.</p>
                 </div>
-            </section>
-        </div>
 
+                <div className="fonctionnalites-body">
+                    <FonctionnaliteCards />
+                </div>
+            </div>
+        </section>
     )
 }
-
 
 export default Fonctionnalites
