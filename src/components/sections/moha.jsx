@@ -116,19 +116,19 @@ const Moha = () => {
         <hr className="my-6 sm:my-8"/>
         <div className="services-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
             <div className="service-card p-4 sm:p-6 reveal" style={{transitionDelay: '0.1s'}}>
-                <img src="/public/web.svg" alt="Développement Web" className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mx-auto" />
+                <img src="/web.svg" alt="Développement Web" className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mx-auto" />
                 <h3 className="text-lg sm:text-xl lg:text-2xl mt-4">Développement Web</h3>
                 <p className="text-sm sm:text-base mt-2 sm:mt-3">Création de sites web modernes, responsives et performants adaptés à vos besoins professionnels.</p>
             </div>
 
             <div className="service-card p-4 sm:p-6 reveal" style={{transitionDelay: '0.2s'}}>
-                <img src="/public/dm.svg" alt="Développement d'Applications" className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mx-auto" />
+                <img src="/dm.svg" alt="Développement d'Applications" className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mx-auto" />
                 <h3 className="text-lg sm:text-xl lg:text-2xl mt-4">Applications Mobiles</h3>
                 <p className="text-sm sm:text-base mt-2 sm:mt-3">Développement d'applications iOS et Android sur mesure pour votre entreprise.</p>
             </div>
 
             <div className="service-card p-4 sm:p-6 reveal" style={{transitionDelay: '0.3s'}}>
-                <img src="/public/app.svg" alt="Marketing Digital" className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mx-auto" />
+                <img src="/app.svg" alt="Marketing Digital" className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mx-auto" />
                 <h3 className="text-lg sm:text-xl lg:text-2xl mt-4">Developppement Desktop</h3>
                 <p className="text-sm sm:text-base mt-2 sm:mt-3">Developpement de logiciels desktop pour votre entreprise.</p>
             </div>

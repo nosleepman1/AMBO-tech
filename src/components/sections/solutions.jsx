@@ -6,12 +6,14 @@ const SolutionsSection = () => {
   const [activeFilter, setActiveFilter] = useState('Tous');
   const [hoveredId, setHoveredId] = useState(null);
 
+
+
   const solutions = [
     {
       id: 1,
       titre: "Site Musee des Civilisations Noires",
       description: "Site du musee des civilisations noires avec pas mal de choses",
-      image: "/public/solutions/MCN.png",
+      image: "/solutions/MCN.png",
       lien: "https://www.mcn.sn",
       categorie: "Web",
       technologies: ["React", "Node.js", "MongoDB"]
@@ -20,7 +22,7 @@ const SolutionsSection = () => {
       id: 2,
       titre: "Salle de jeux de societe",
       description: "Application de quiz fait avec react JS et Express",
-      image: "/public/solutions/QUIZ.png",
+      image: "/solutions/QUIZ.png",
       lien: "https://www.quiz-app-demo.com",
       categorie: "Web",
       technologies: ["React", "Express", "WebSocket"]

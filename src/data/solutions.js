@@ -5,14 +5,14 @@ export const SOLUTIONS = [
         "id": 1,
         "titre": "Site Musee des Civilisations Noires",
         "description": "Site du musee des civilisations noires avec pas mal de choses",
-        "image": "/public/solutions/MCN.png",
+        "image": "/solutions/MCN.png",
         "lien": "https://www.mcn.sn"
     },
     {
         "id": 2,
         "titre": "Salle de jeux de societe",
         "description": "Application de quiz fait avec react JS et Express",
-        "image": "/public/solutions/QUIZ.png",
+        "image": "/solutions/QUIZ.png",
         "lien": "https:/science-quizz.vercel.app"
     },
     {
