@@ -80,7 +80,8 @@
   background: linear-gradient(135deg, #106EBE 0%, #0a4a8f 100%);
   position: relative;
   overflow: hidden;
-  padding: 80px 20px;
+  /* reduce bottom spacing so next section sits closer */
+  
 }
 
 .fonctionnalites-section::before {
@@ -115,6 +116,7 @@
 
 .fonctionnalites-header {
   text-align: center;
+  /* set spacing to 60px on desktop */
   margin-bottom: 60px;
   animation: slideDownReveal 0.8s ease-out;
 }
@@ -165,10 +167,11 @@
 /* Responsive */
 @media (max-width: 768px) {
   .fonctionnalites-section {
-    padding: 60px 16px;
+    padding: 32px 16px 16px;
   }
 
   .fonctionnalites-header {
+    /* mobile/tablet spacing: 40px to keep readable gap */
     margin-bottom: 40px;
   }
 
@@ -183,7 +186,7 @@
 
 @media (max-width: 480px) {
   .fonctionnalites-section {
-    padding: 40px 12px;
+    padding: 24px 12px 12px;
   }
 
   .fonctionnalites-title {

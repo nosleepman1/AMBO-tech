@@ -54,24 +54,25 @@
   z-index: 1;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 60px 20px;
+  /* remove top spacing so title sits at container start */
+  padding: 0 20px 60px;
 }
 
 @media (min-width: 640px) {
   .solutions-container {
-    padding: 80px 40px;
+    padding: 0 40px 80px;
   }
 }
 
 @media (min-width: 768px) {
   .solutions-container {
-    padding: 100px 60px;
+    padding: 0 60px 100px;
   }
 }
 
 @media (min-width: 1024px) {
   .solutions-container {
-    padding: 120px 100px;
+    padding: 0 100px 120px;
   }
 }
 
@@ -81,6 +82,7 @@
 
 .solutions-header {
   text-align: center;
+  /* set spacing to 60px on desktop */
   margin-bottom: 60px;
   animation: slideDownReveal 0.8s ease-out;
 }
@@ -151,7 +153,10 @@
 
 .solutions-subtitle {
   font-size: 1.125rem;
-  color: rgba(15, 252, 190, 0.8);
+  /* same color as title, normal weight and lowercase */
+  color: var(--color-text-light);
+  font-weight: 400;
+  text-transform: lowercase;
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
@@ -669,6 +674,7 @@
   }
 
   .solutions-header {
+    /* mobile spacing: 40px to match mobile target */
     margin-bottom: 40px;
   }
 

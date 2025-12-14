@@ -2,7 +2,6 @@
 .contact {
     position: relative;
     overflow: hidden;
-    padding: 60px 20px;
 }
 
 .contact::before {

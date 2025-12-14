@@ -7,8 +7,7 @@ const SolutionsSection = () => {
   const [hoveredId, setHoveredId] = useState(null);
 
 
-
-  const solutions = [
+const solutions = [
     {
       id: 1,
       titre: "Site Musee des Civilisations Noires",
@@ -108,12 +107,9 @@ const SolutionsSection = () => {
       <div className="solutions-container">
         {/* Header avec animations */}
         <div className="solutions-header">
-          <div className="solutions-badge">
-            <Sparkles className="solutions-badge-icon" />
-            <span>Nos Réalisations</span>
-          </div>
-          <h2 className="section-title text-[#0FFCBE]">Nos Solutions</h2>
-          <p className="section-subtitle">
+          
+          <h2 className="solutions-title">Nos Solutions</h2>
+          <p className="solutions-subtitle">
             Découvrez nos projets web et mobile qui transforment les idées en expériences digitales exceptionnelles
           </p>
         </div>
