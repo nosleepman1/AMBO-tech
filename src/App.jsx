@@ -7,6 +7,10 @@ import Footer from './components/footer.jsx';
 import Contact from './components/sections/contact.jsx';
 import Fonctionnalites from './components/sections/fonctionnalites.jsx'
 import Solutions from './components/sections/solutions.jsx'
+import {Button} from '@mui/material'
+import ModernCarousel from './components/Carousselle.jsx';
+
+
 
 function App() {
 
@@ -20,6 +24,7 @@ function App() {
         <Moha />
         <Contact/>
         <Footer />
+
     </>
   )
 }
