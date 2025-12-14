@@ -13,7 +13,7 @@ const solutions = [
       titre: "Site Musee des Civilisations Noires",
       description: "Site du musee des civilisations noires avec pas mal de choses",
       image: "/solutions/MCN.png",
-      lien: "https://www.mcn.sn",
+      lien: "https://musee-des-civilisations-noires.vercel.app",
       categorie: "Web",
       technologies: ["React", "Node.js", "MongoDB"]
     },
@@ -22,7 +22,7 @@ const solutions = [
       titre: "Salle de jeux de societe",
       description: "Application de quiz fait avec react JS et Express",
       image: "/solutions/QUIZ.png",
-      lien: "https://www.quiz-app-demo.com",
+      lien: "https://science-quizz.vercel.app",
       categorie: "Web",
       technologies: ["React", "Express", "WebSocket"]
     },
@@ -31,7 +31,7 @@ const solutions = [
       titre: "Plateforme Immobilière Premium",
       description: "Site web moderne pour agence immobilière avec recherche avancée, visites virtuelles 3D, gestion des annonces et système de réservation en ligne",
       image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-      lien: "https://www.immobilier-premium.com",
+      lien: "",
       categorie: "Web",
       technologies: ["Next.js", "PostgreSQL", "Stripe"],
       featured: true
@@ -41,46 +41,9 @@ const solutions = [
       titre: "E-Commerce Fashion Store",
       description: "Boutique en ligne complète avec panier d'achat, paiement sécurisé, gestion des stocks et tableau de bord administrateur",
       image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop",
-      lien: "https://www.fashion-store-demo.com",
+      lien: "",
       categorie: "E-commerce",
       technologies: ["React", "Stripe", "Firebase"]
-    },
-    {
-      id: 5,
-      titre: "Dashboard Analytique",
-      description: "Interface d'analyse de données interactive avec graphiques dynamiques, KPIs en temps réel et export de rapports",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-      lien: "https://www.analytics-dashboard.com",
-      categorie: "Dashboard",
-      technologies: ["React", "D3.js", "WebSocket"]
-    },
-    {
-      id: 6,
-      titre: "Application de Gestion Restaurant",
-      description: "Système complet de gestion pour restaurants : commandes, menu digital, caisse, réservations et suivi des livraisons",
-      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop",
-      lien: "https://www.resto-manager.com",
-      categorie: "Mobile",
-      technologies: ["React Native", "Firebase", "Node.js"]
-    },
-    {
-      id: 7,
-      titre: "Portfolio Créatif",
-      description: "Site portfolio moderne pour artistes et designers avec galerie photo, animations fluides et design minimaliste",
-      image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop",
-      lien: "https://www.creative-portfolio.com",
-      categorie: "Web",
-      technologies: ["Next.js", "Framer Motion", "Sanity"]
-    },
-    {
-      id: 8,
-      titre: "Plateforme de Réservation Voyage",
-      description: "Application de réservation de voyages avec recherche de vols, hôtels, comparateur de prix et système de paiement intégré",
-      image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop",
-      lien: "https://www.travel-booking.com",
-      categorie: "Web",
-      technologies: ["Vue.js", "Node.js", "Redis"],
-      featured: true
     }
   ];
 

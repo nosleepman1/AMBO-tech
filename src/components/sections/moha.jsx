@@ -61,8 +61,10 @@ const Moha = () => {
         <div>
 
         <section className="team text-reveal px-4 sm:px-6 lg:px-8" id="team">
-        <h1 className="text-glow text-3xl sm:text-4xl md:text-5xl lg:text-6xl" style={{fontSize: 'clamp(2rem, 5vw, 3.75rem)'}}>Notre Équipe</h1>
-        <hr className="my-6 sm:my-8"/>
+        <div className="team-header">
+            <h2 className="team-title">Notre Équipe</h2>
+            <p className="team-subtitle">découvrez les talents derrière ambo tech</p>
+        </div>
         <div className="team-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
 
             {

@@ -126,6 +126,16 @@
   }
 }
 
+.hero-title {
+  font-size: clamp(2rem, 5vw, 3.75rem);
+  font-weight: 800;
+  color: #0FFCBE;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  text-shadow: 0 2px 10px rgba(15, 252, 190, 0.2);
+  animation: slideInDown 0.8s ease-out;
+}
+
 .brand-text {
   font-size: clamp(2.5rem, 8vw, 4.5rem);
   font-weight: 900;
@@ -145,6 +155,19 @@
   50% {
     filter: drop-shadow(0 0 20px rgba(15, 252, 190, 0.6));
   }
+}
+
+.hero-subtitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: clamp(1.125rem, 3vw, 1.5rem);
+  font-weight: 400;
+  color: #0FFCBE;
+  text-transform: lowercase;
+  height: 1.2em;
+  min-height: 40px;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
 .typing-wrapper {
