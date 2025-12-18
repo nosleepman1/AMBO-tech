@@ -50,16 +50,22 @@ const Contact = () => {
     return (
         <section className="contact text-reveal" id="contact">
             <div className="contact-container">
+                {/* Header */}
                 <div className="contact-header">
                     <h2 className="contact-title">Contactez-nous</h2>
-                    <p className="contact-subtitle">restons en contact et discutons de vos projets passionnants</p>
+                    <p className="contact-subtitle">Restons en contact et discutons de vos projets passionnants</p>
                 </div>
-                <div className="contact-content">
-                    <div className="contact-info">
+
+                {/* Main Content Grid */}
+                <div className="contact-wrapper">
+                    {/* Left Side - Info */}
+                    <div className="contact-info-section">
                         <div className="contact-info-card">
                             <h3 className="contact-info-title">Restons en contact</h3>
-                            <p>Nous sommes toujours disponibles pour discuter de vos projets passionnants et de nouvelles opportunités. Collaborons ensemble !</p>
+                            <p className="contact-info-description">Nous sommes toujours disponibles pour discuter de vos projets passionnants et de nouvelles opportunités. Collaborons ensemble !</p>
                         </div>
+
+                        {/* Contact Items */}
                         <div className="contact-details">
                             <div className="contact-item reveal">
                                 <div className="contact-item-icon">
@@ -90,70 +96,69 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div className="contact-form">
-                    <div className="contact-form-card">
-                        <h2 className="contact-form-title">Envoyez-nous un message</h2>
-                        <form id="contact-form" onSubmit={handleSubmit} noValidate>
-                            <div className="form-group">
-                                <label htmlFor="name" className="form-label">Nom</label>
-                                <input 
-                                    type="text" 
-                                    id="name"
-                                    placeholder="Votre nom" 
-                                    required 
-                                    name="name"
-                                    value={formData.name}
-                                    onChange={handleChange}
-                                    aria-label="Nom"
-                                    className={formData.name ? 'has-value' : ''}
-                                    style={{background: 'none'}}
-                                />
-                            </div>
-                            <div className="form-group">
-                                <label htmlFor="email" className="form-label">Email</label>
-                                <input 
-                                    type="email" 
-                                    id="email"
-                                    placeholder="Votre email" 
-                                    required 
-                                    name="email"
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    aria-label="Email"
-                                    className={formData.email ? 'has-value' : ''}
-                                />
-                            </div>
-                            <div className="form-group">
-                                <label htmlFor="message" className="form-label">Message</label>
-                                <textarea 
-                                    id="message"
-                                    name="message" 
-                                    placeholder="Votre message" 
-                                    rows="5" 
-                                    required 
-                                    value={formData.message}
-                                    onChange={handleChange}
-                                    aria-label="Message"
-                                    className={formData.message ? 'has-value' : ''}
-                                ></textarea>
-                            </div>
-                            <button type="submit" className="btn-send" disabled={isSubmitting}>
-                                <span className="btn-text" style={{ display: isSubmitting ? 'none' : 'inline' }}>
-                                    <i className="fa-solid fa-paper-plane"></i> Envoyer le message
-                                </span>
-                                <span className="btn-loading" style={{ display: isSubmitting ? 'inline-flex' : 'none' }}>
-                                    <i className="fa-solid fa-spinner fa-spin"></i> Envoi...
-                                </span>
-                            </button>
-                            {formMessage.text && (
-                                <div className={`form-message ${formMessage.type}`}>
-                                    <i className={`fa-solid ${formMessage.type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'}`}></i>
-                                    {formMessage.text}
+                    {/* Right Side - Form */}
+                    <div className="contact-form-section">
+                        <div className="contact-form-card">
+                            <h2 className="contact-form-title">Envoyez-nous un message</h2>
+                            <form id="contact-form" onSubmit={handleSubmit} noValidate>
+                                <div className="form-group">
+                                    <label htmlFor="name" className="form-label">Nom</label>
+                                    <input 
+                                        type="text" 
+                                        id="name"
+                                        placeholder="Votre nom" 
+                                        required 
+                                        name="name"
+                                        value={formData.name}
+                                        onChange={handleChange}
+                                        aria-label="Nom"
+                                        className={formData.name ? 'has-value' : ''}
+                                    />
                                 </div>
-                            )}
-                        </form>
+                                <div className="form-group">
+                                    <label htmlFor="email" className="form-label">Email</label>
+                                    <input 
+                                        type="email" 
+                                        id="email"
+                                        placeholder="Votre email" 
+                                        required 
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        aria-label="Email"
+                                        className={formData.email ? 'has-value' : ''}
+                                    />
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="message" className="form-label">Message</label>
+                                    <textarea 
+                                        id="message"
+                                        name="message" 
+                                        placeholder="Votre message" 
+                                        required 
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                        aria-label="Message"
+                                        className={formData.message ? 'has-value' : ''}
+                                    ></textarea>
+                                </div>
+                                <button type="submit" className="btn-send" disabled={isSubmitting}>
+                                    <span className="btn-text" style={{ display: isSubmitting ? 'none' : 'inline' }}>
+                                        <i className="fa-solid fa-paper-plane"></i> Envoyer le message
+                                    </span>
+                                    <span className="btn-loading" style={{ display: isSubmitting ? 'inline-flex' : 'none' }}>
+                                        <i className="fa-solid fa-spinner fa-spin"></i> Envoi...
+                                    </span>
+                                </button>
+                                {formMessage.text && (
+                                    <div className={`form-message ${formMessage.type}`}>
+                                        <i className={`fa-solid ${formMessage.type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'}`}></i>
+                                        {formMessage.text}
+                                    </div>
+                                )}
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

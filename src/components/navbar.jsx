@@ -9,8 +9,10 @@ const Navbar = () => {
 
     const navLinks = useMemo(() => [
         { title: 'Accueil', href: '#hero', id: 'hero' },
-        { title: 'Services', href: '#services', id: 'services' },
+        { title: 'Fonctionnalites', href: '#fonctionnalites', id: 'fonctionnalites' },
+        { title: 'Solutions', href: '#solutions', id: 'solutions' },
         { title: 'Équipe', href: '#team', id: 'team' },
+        { title: 'Stack', href: '#stack', id: 'stack' },
         { title: 'Contact', href: '#contact', id: 'contact' },
     ], []);
 

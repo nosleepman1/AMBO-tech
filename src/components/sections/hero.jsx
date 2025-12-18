@@ -88,14 +88,7 @@ const Hero = () => {
                     </div>
                 </div>
 
-                {/* Bottom decoration with typing variations */}
-                <div className="hero-footer">
-                    <div className="footer-languages">
-                        <span className="lang-badge">BIENVENUE</span>
-                        <span className="lang-badge">WELCOME</span>
-                        <span className="lang-badge">مرحبا بكم</span>
-                    </div>
-                </div>
+               
             </div>
         </section>
     );

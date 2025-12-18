@@ -12,10 +12,11 @@ const solutions = [
       id: 1,
       titre: "Site Musee des Civilisations Noires",
       description: "Site du musee des civilisations noires avec pas mal de choses",
-      image: "/solutions/MCN.png",
+      image: "https://res.cloudinary.com/daaiip4ou/image/upload/v1765998838/interieur-de-la-chambre-d-une-crypte_k4rxta.jpg",
       lien: "https://musee-des-civilisations-noires.vercel.app",
       categorie: "Web",
-      technologies: ["React", "Node.js", "MongoDB"]
+      technologies: ["React", "Node.js", "MongoDB"],
+       featured: true
     },
     {
       id: 2,
@@ -33,7 +34,7 @@ const solutions = [
       image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
       lien: "",
       categorie: "Web",
-      technologies: ["Next.js", "PostgreSQL", "Stripe"],
+      technologies: ["Laravel", "PostgreSQL", "Next.js"],
       featured: true
     },
     {
@@ -53,7 +54,7 @@ const solutions = [
     ? solutions 
     : solutions.filter(sol => sol.categorie === activeFilter);
 
-  const featuredProject = solutions.find(s => s.featured && s.id === 3);
+  const featuredProject = solutions.find(s => s.featured && s.id === 1);
   const otherProjects = filteredSolutions.filter(s => s.id !== featuredProject?.id);
 
   const getCategoryIcon = (cat) => {
@@ -203,7 +204,17 @@ const solutions = [
           <div className="cta-card">
             <h3 className="cta-title">Un projet en tête ?</h3>
             <p className="cta-description">Discutons de votre prochaine solution digitale</p>
-            <button className="cta-button">Démarrer un projet</button>
+            <button 
+              className="cta-button" 
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
+              Démarrer un projet
+            </button>
           </div>
         </div>
       </div>

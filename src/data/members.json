@@ -1,7 +1,7 @@
 [
     {
         "name" : "El H Boubacar MBAYE",
-        "stack" : "Developpeur FullStack",
+        "stack" : "Developpeur Frontend",
         "image" : "/bouba.jpg",
         "role" : "CEO & Co-Founder",
         "reseaux" : [
@@ -18,7 +18,7 @@
     },
     {
         "name" : "Abdallah DIOUF",
-        "stack" : "Developpeur FullStack",
+        "stack" : "Dev FullStack & Devops",
         "image" : "/diouf.jpg",
         "role" : "CEO & Co-Founder",
         "reseaux" : [
@@ -35,7 +35,7 @@
     },
     {
         "name" : "Mohamed Dieye TINE",
-        "stack" : "Developpeur FullStack",
+        "stack" : "Developpeur Backend",
         "image" : "/pakh.jpg",
         "role" : "CEO & Co-Founder",
         "reseaux" : [

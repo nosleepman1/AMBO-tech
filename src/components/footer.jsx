@@ -1,21 +1,35 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaGithub, FaLinkedin, FaInstagram, FaRocket, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaGithub, FaTiktok, FaInstagram, FaRocket, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import '../App.css';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
 
+    const handleLinkClick = (e, href) => {
+        e.preventDefault();
+        const element = document.querySelector(href);
+        if (element) {
+            const offsetTop = element.offsetTop - 80;
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    };
+
     const navLinks = [
-        { title: 'Accueil', href: '/' },
-        { title: 'About', href: '/about' },
-        { title: 'Contact', href: '/contact' },
+        { title: 'Accueil', href: '#hero' },
+        { title: 'Fonctionnalites', href: '#fonctionnalites' },
+        { title: 'Solutions', href: '#solutions' },
+        { title: 'Équipe', href: '#team' },
+        { title: 'Stack', href: '#stack' },
+        { title: 'Contact', href: '#contact' },
     ];
 
     const socialLinks = [
-        { icon: <FaGithub />, href: 'https://github.com', label: 'GitHub' },
-        { icon: <FaLinkedin />, href: 'https://linkedin.com', label: 'LinkedIn' },
-        { icon: <FaInstagram />, href: 'https://instagram.com', label: 'Instagram' },
+        { icon: <FaGithub />, href: 'https://github.com/nosleepman1', label: 'GitHub' },
+        { icon: <FaTiktok />, href: 'https://www.tiktok.com/@ambo_tech?_r=1&_t=ZM-92JSN3gLIhk', label: 'TikTok' },
+        { icon: <FaInstagram />, href: 'https://www.instagram.com/ambotech3?igsh=NmZneWJveWVwNWJs', label: 'Instagram' },
     ];
 
     return (
@@ -52,9 +66,13 @@ const Footer = () => {
                         <ul className="footer-links">
                             {navLinks.map((link, index) => (
                                 <li key={index}>
-                                    <Link to={link.href} className="footer-link">
+                                    <a 
+                                        href={link.href} 
+                                        className="footer-link"
+                                        onClick={(e) => handleLinkClick(e, link.href)}
+                                    >
                                         {link.title}
-                                    </Link>
+                                    </a>
                                 </li>
                             ))}
                         </ul>

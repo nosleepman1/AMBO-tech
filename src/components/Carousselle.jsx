@@ -39,7 +39,7 @@ const TechCarousel = () => {
   const duplicatedTechs = [...technologies, ...technologies];
 
   return (
-    <div className="w-screen py-16 md:py-20 overflow-hidden">
+    <div className="w-screen py-16 md:py-20 overflow-hidden" id="stack">
       <div className="mx-auto px-4  mb-12 md:mb-16 flex justify-center">
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0FFCBE] mb-3">

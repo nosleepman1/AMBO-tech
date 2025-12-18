@@ -60,7 +60,7 @@ const Moha = () => {
     return (
         <div>
 
-        <section className="team text-reveal px-4 sm:px-6 lg:px-8" id="team">
+        <section className="team text-reveal px-4 sm:px-6 lg:px-8 rounded-xl" id="team">
         <div className="team-header">
             <h2 className="team-title">Notre Équipe</h2>
             <p className="team-subtitle">découvrez les talents derrière ambo tech</p>
