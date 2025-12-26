@@ -32,7 +32,7 @@ const solutions = [
       titre: "Plateforme Immobilière Premium",
       description: "Site web moderne pour agence immobilière avec recherche avancée, visites virtuelles 3D, gestion des annonces et système de réservation en ligne",
       image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-      lien: "https://github.com/nosleepman1/immoPrestige-API",
+      lien: "",
       categorie: "Web",
       technologies: ["Laravel", "PostgreSQL", "Next.js"],
       featured: true
@@ -42,7 +42,7 @@ const solutions = [
       titre: "E-Commerce Fashion Store",
       description: "Boutique en ligne complète avec panier d'achat, paiement sécurisé, gestion des stocks et tableau de bord administrateur",
       image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop",
-      lien: "https://github.com/nosleepman1/stock-manager-API",
+      lien: "",
       categorie: "E-commerce",
       technologies: ["React", "Stripe", "Firebase"]
     }
