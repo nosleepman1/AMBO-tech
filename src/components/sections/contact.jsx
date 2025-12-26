@@ -31,6 +31,27 @@ const Contact = () => {
         setIsSubmitting(true);
         setFormMessage({ type: '', text: '' });
 
+        // Validation des champs
+        if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+            setIsSubmitting(false);
+            setFormMessage({
+                type: 'error',
+                text: 'Veuillez remplir tous les champs du formulaire.'
+            });
+            return;
+        }
+
+        // Validation de l'email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(formData.email)) {
+            setIsSubmitting(false);
+            setFormMessage({
+                type: 'error',
+                text: 'Veuillez entrer une adresse email valide.'
+            });
+            return;
+        }
+
         // Simulation d'envoi (remplacer par votre API)
         setTimeout(() => {
             setIsSubmitting(false);
@@ -82,7 +103,7 @@ const Contact = () => {
                                 </div>
                                 <div className="contact-item-content">
                                     <span className="contact-item-label">Téléphone</span>
-                                    <a href="tel:+2214731493">+221 473 14 93</a>
+                                    <a href="tel:+221774731493">+221 77 473 14 93</a>
                                 </div>
                             </div>
                             <div className="contact-item reveal">
