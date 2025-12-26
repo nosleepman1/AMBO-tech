@@ -96,7 +96,7 @@ const Footer = () => {
                             </div>
                             <div className="footer-contact-item">
                                 <FaPhone className="footer-contact-icon" />
-                                <span>+221 XX XXX XX XX</span>
+                                <span>+221 77 473 14 93</span>
                             </div>
                             <div className="footer-contact-item">
                                 <FaMapMarkerAlt className="footer-contact-icon" />
@@ -111,9 +111,6 @@ const Footer = () => {
                     <div className="footer-divider"></div>
                     <div className="footer-copyright">
                         <p>&copy; {currentYear} AMBO TECH. Tous droits réservés.</p>
-                        <p className="footer-made-with">
-                             <span className="footer-heart"></span> AMBO TECH
-                        </p>
                     </div>
                 </div>
             </div>
