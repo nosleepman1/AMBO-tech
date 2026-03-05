@@ -84,5 +84,26 @@ export const SOLUTIONS = [
         "description": "Plateforme de mise en relation freelances-clients avec système de messagerie, gestion de projets et paiement sécurisé",
         "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop",
         "lien": "https://www.freelance-marketplace.com"
-    }
+    },
+      {
+        "id": 13,
+        "titre": "Agri-Senegal",
+        "description": "Plateforme de gestion agricole pour les agriculteurs sénégalais, offrant des outils de suivi des cultures, prévisions météorologiques et conseils agricoles personnalisés",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=600&fit=crop",
+        "lien": "http://agri-senegal.gt.tc/"
+      },
+       {
+        "id": 14,
+        "titre": "Site d'annonces mariage ",
+        "description": "Site d'annonces de mariage pour les futurs mariés, avec des fonctionnalités de recherche avancée, de messagerie et de gestion des annonces pour les prestataires de services de mariage",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=600&fit=crop",
+        "lien": "https://site-de-mariage.vercel.app/"
+      },
+      {
+        "id": 15,
+        "titre": "Sites Pour Quizz Islamiques",
+        "description": "Site de quizz islamiques pour les étudiants et les passionnés d'islam, avec des questions sur l'histoire, la culture et les enseignements de l'islam, ainsi que des fonctionnalités de suivi des progrès et de partage des résultats",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=600&fit=crop",
+        "lien": "https://quizizlamique.great-site.net/qcm_islamique/"
+      }
 ]
