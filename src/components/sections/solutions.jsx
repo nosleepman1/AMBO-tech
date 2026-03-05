@@ -21,31 +21,43 @@ const solutions = [
     {
       id: 2,
       titre: "Salle de jeux de societe",
-      description: "Application de quiz fait avec react JS et Express",
-      image: "/solutions/QUIZ.png",
+      description: "Application de quiz avec plus de 12 themes",
+      image: "/projects/cg.jpg",
       lien: "https://science-quizz.vercel.app",
       categorie: "Web",
-      technologies: ["React", "Express", "WebSocket"]
+      technologies: ["React", "Express", "MongoDB", "Node.js"]
     },
+   
     {
-      id: 3,
-      titre: "Plateforme Immobilière Premium",
-      description: "Site web moderne pour agence immobilière avec recherche avancée, visites virtuelles 3D, gestion des annonces et système de réservation en ligne",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-      lien: "",
-      categorie: "Web",
-      technologies: ["Laravel", "PostgreSQL", "Next.js"],
-      featured: true
-    },
-    {
-      id: 4,
-      titre: "E-Commerce Fashion Store",
-      description: "Boutique en ligne complète avec panier d'achat, paiement sécurisé, gestion des stocks et tableau de bord administrateur",
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop",
-      lien: "",
-      categorie: "E-commerce",
-      technologies: ["React", "Stripe", "Firebase"]
-    }
+        id: 3,
+        titre: "Agri-Senegal",
+        description: "Plateforme de gestion agricole pour les agriculteurs sénégalais, offrant des outils de suivi des cultures, prévisions météorologiques et conseils agricoles personnalisés",
+        image: "/projects/agri.jpg",
+        lien: "http://agri-senegal.gt.tc/",
+        categorie: "agriculture",
+        technologies: ["PHP", "PostgreSQL", "JS"],
+
+      },
+       {
+        id: 4,
+        titre: "Site d'annonces mariage ",
+        description: "Site d'annonces de mariage pour les futurs mariés, avec des fonctionnalités de recherche avancée, de messagerie et de gestion des annonces pour les prestataires de services de mariage",
+        image: "/projects/weeding.jpg",
+        lien: "https://site-de-mariage.vercel.app/",
+        categorie : "Societe",
+        technologies: ["PHP", "MySQL", "JS"],
+
+      },
+      
+      {
+        id: 5,
+        titre: "Sites Pour Quizz Islamiques",
+        description: "Site de quizz islamiques pour les étudiants et les passionnés d'islam, avec des questions sur l'histoire, la culture et les enseignements de l'islam, ainsi que des fonctionnalités de suivi des progrès et de partage des résultats",
+        image: "/projects/islam.jpg",
+        lien: "https://quizizlamique.great-site.net/qcm_islamique/",
+        categorie: "culture | religion",
+        technologies: ["PHP", "MySQL", "JS"]
+      }
   ];
 
   const categories = ['Tous', 'Web', 'Mobile', 'E-commerce', 'Dashboard'];
