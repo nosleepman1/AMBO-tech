@@ -11,7 +11,6 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Basic throttle pattern could go here, but requestAnimationFrame is better
       window.requestAnimationFrame(() => setScrolled(window.scrollY > 50));
     };
     window.addEventListener("scroll", handleScroll);
@@ -29,8 +28,9 @@ export default function Navbar() {
 
   const navLinks = [
     { title: "Accueil", href: "#hero" },
-    { title: "Services", href: "#services" },
+    { title: "Expertise", href: "#services" },
     { title: "Projets", href: "#projects" },
+    { title: "Équipe", href: "#team" },
     { title: "Contact", href: "#contact" },
   ];
 
@@ -45,7 +45,6 @@ export default function Navbar() {
           AMBO TECH
         </Link>
 
-        {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
             <Link
@@ -58,7 +57,6 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Mobile Toggle */}
         <button 
           className="md:hidden text-gray-900 dark:text-white" 
           onClick={() => setIsOpen(!isOpen)}
@@ -70,7 +68,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
